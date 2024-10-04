@@ -1,0 +1,97 @@
+.container {
+  display: flex;
+}
+
+.toolbar {
+  background-color: #E4E4E4; /* Colore simile alla barra degli strumenti di Windows XP */
+  padding: 10px;
+  border: 2px solid #808080; /* Bordo simile a Windows XP */
+  box-shadow: inset 1px 1px 0 #FFFFFF, inset -1px -1px 0 #808080; /* Effetto 3D */
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+}
+
+button, input[type="color"] {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 5px 0;
+}
+
+button img {
+  width: 24px; /* Dimensione dell'icona */
+  height: 24px;
+}
+
+canvas {
+  border: 2px solid #808080; /* Bordo simile a Windows XP */
+  background-color: #FFFFFF;
+  box-shadow: inset 1px 1px 0 #FFFFFF, inset -1px -1px 0 #808080; /* Effetto 3D */
+}
+
+.active {
+  border: 2px solid #0000FF; /* Bordo blu per indicare l'elemento attivo */
+  box-shadow: 0 0 5px #0000FF; /* Effetto di ombra blu */
+}
+
+input[type="range"] {
+  margin-top: 10px;
+}
+
+.slider-container {
+  margin-top: 10px;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 8px;
+  background: #E4E4E4;
+  border: 2px solid #808080;
+  box-shadow: inset 1px 1px 0 #FFFFFF, inset -1px -1px 0 #808080; /* Effetto 3D */
+  outline: none;
+  opacity: 0.7;
+  transition: opacity .15s ease-in-out;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  background: #C0C0C0;
+  border: 2px solid #808080;
+  box-shadow: inset 1px 1px 0 #FFFFFF, inset -1px -1px 0 #808080; /* Effetto 3D */
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  background: #C0C0C0;
+  border: 2px solid #808080;
+  box-shadow: inset 1px 1px 0 #FFFFFF, inset -1px -1px 0 #808080; /* Effetto 3D */
+  cursor: pointer;
+}
+.xp-button {
+  background-color: #E4E4E4;
+  border: 2px solid #808080;
+  box-shadow: inset 1px 1px 0 #FFFFFF, inset -1px -1px 0 #808080, 1px 1px 0 #FFFFFF, -1px -1px 0 #808080;
+  /* Effetto 3D */
+  padding: 5px 10px;
+  font-family: 'Tahoma', sans-serif;
+  font-size: 12px;
+  color: #000000;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.xp-button:active {
+  box-shadow: inset -1px -1px 0 #FFFFFF, inset 1px 1px 0 #808080, -1px -1px 0 #FFFFFF, 1px 1px 0 #808080;
+  /* Effetto 3D invertito */
+}
