@@ -485,3 +485,29 @@
   resize: none;
   box-sizing: border-box;
 }
+
+.menu-bar {
+  display: flex;
+  background-color: #ECE9D8;
+  border-bottom: 1px solid #7A96DF;
+  padding: 2px 5px;
+}
+
+.menu-item {
+  background-color: transparent;
+  border: none;
+  margin-right: 10px;
+  padding: 3px 10px;
+  cursor: pointer;
+  font-family: 'Tahoma', sans-serif;
+  font-size: 13px;
+  color: #000000;
+
+  &:hover {
+    background-color: #D1D2D4;
+  }
+
+  &:active {
+    background-color: #B0B0B0;
+  }
+}

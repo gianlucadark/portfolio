@@ -14,8 +14,18 @@
     </div>
   </div>
 
+  <!-- Barra di menu -->
+  <div class="menu-bar" *ngIf="windowType !== 'prompt'">
+    <button class="menu-item">File</button>
+    <button class="menu-item">Edit</button>
+    <button class="menu-item">View</button>
+    <button class="menu-item">Favorites</button>
+    <button class="menu-item">Tools</button>
+    <button class="menu-item">Help</button>
+  </div>
+
   <!-- Nuova sezione per i tasti di navigazione -->
-  <div class="navigation-bar">
+  <div class="navigation-bar" *ngIf="windowType !== 'prompt'">
     <button class="nav-button" aria-label="Indietro" disabled>
       <img src="assets/icons/back.png" alt="Back" class="nav-icon">
       <span class="nav-text">Back</span>
